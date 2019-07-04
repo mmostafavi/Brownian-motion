@@ -17,7 +17,7 @@
 * in command above first argument is name of our file. second one (25) is min pixels that considered as bead.
 * third command is brightness that a pixel has to be considered as bead pixel.
 * fourth is maximum distance that we accept as movement in two consecutive frame for a bead molecule.
-* fifth is the folder we want to use for calculatin.
+* fifth is the folder we want to use for calculation.
 * feel free to change all them except first one.
 
 * if you want to see just movements use command <code>python beadtracker.py 25 180.0 25.0 run_1/*.jpg </code>
