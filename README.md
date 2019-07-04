@@ -1,6 +1,3 @@
-# Python Course Project (2019): Estimating Avogadro Number
-This repository contains all the required files to complete the final project for Python programming course at faculty of Electerical and Computer Engineering, University of Tabriz, 2019. This course is based on the [Introduction to Programming in Python](https://introcs.cs.princeton.edu/python/home/). To download slides and for more information you can see the [course website](http://www.snrazavi.ir/python-2019/). Also you can watch video lectures related to this course in my [YouTube channel](https://www.youtube.com/c/SeyedNaserRazavi/).
-
 ![Brownian motion](Python-Project.gif)
 
 ## Contents
@@ -9,13 +6,22 @@ This repository contains all the required files to complete the final project fo
 * mp4: a folder containing different movies displaying brownian motion of beads in water.
 * beads-run_1.txt and displacements-run_1.txt: sample outputs for this project.
 
-## Required skills to complete this project
-* Modular and Object Oriented Programming.
-* Working with files, redirectiong from/to files and piping.
-* Writing functions and recursive functions.
-* Working with objects like Picture and Color.
-* Performing scientific computations.
-* Effective use of different modules and libraries introduced in the course.
+## Description
+* this project is about proccesing consecutive frames of bead molecules among 
+* water molecules and recognize beads from water and find their movement in small
+* gaps of time in consecutive frames and use scientific formulas to estimate 
+* avagrado Number with a good accuracy.
 
-## Project Due
-You should submit all the required files as described in the descriptions via Piazza before **June, 25, 2019**. Put all the required files in a folder with your student number.
+## Commands
+* use <code>python beadtracker.py 25 180.0 25.0 run_1/*.jpg | python avagrado.py</code> for final result.
+* in command above first argument is name of our file. second one (25) is min pixels that considered as bead.
+* third command is brightness that a pixel has to be considered as bead pixel.
+* fourth is maximum distance that we accept as movement in two consecutive frame for a bead molecule.
+* fifth is the folder we want to use for calculatin.
+* feel free to change all them except first one.
+
+* if you want to see just movements use command <code>python beadtracker.py 25 180.0 25.0 run_1/*.jpg </code>
+
+
+
+* and ofcourse feel free to fork and maybe do it yourself 😉
